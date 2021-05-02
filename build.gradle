@@ -13,6 +13,11 @@ allprojects {
     version '0.0.1-SNAPSHOT'
 }
 
+// root 프로젝트에서 빌드시 bootJar의 main class 위치 지정
+bootJar {
+    mainClass = 'kitchenpos.Application'
+}
+
 subprojects {
     apply plugin: 'java'
     apply plugin: 'org.springframework.boot'

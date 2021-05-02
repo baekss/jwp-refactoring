@@ -1,3 +1,10 @@
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }
+// main method 포함 모듈(SpringBootApplication) -> bootJar
+bootJar.enabled = true
+jar.enabled = false
+
+test {
+    useJUnitPlatform()
+}
